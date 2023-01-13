@@ -19,6 +19,10 @@ font-family: var(--default-font-family);
 color: var(--text-color);
 }
 
+h1 {
+    font-size: 36px;
+}
+
 .homepage a {
     text-decoration: none;
     color: var(--text-color);
@@ -30,11 +34,12 @@ color: var(--text-color);
     color: var(--link-color);
   }
 
-  select {
+  .form-select {
     width: 60%;
-    padding: 10px;
-  }  
+    display: inline;
+  }
 
+  
 select, option, .date {
     font-weight: 300;
 }
@@ -46,16 +51,22 @@ h2, .date {
 h2 {
     font-size: 28px;
     font-weight: 300;
+    margin-bottom: 0;
 }
 
 .city-break {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.date {
+    font-size: 18px;
+}
+
 .time {
     text-align: right;
     font-size: 32px;
     font-weight: 200;
+    line-height: 36px;
 }
 
 footer {
@@ -72,4 +83,26 @@ footer a {
 footer a:hover {
     color: var(--text-color);
     cursor: pointer;
+}
+
+@media (max-width: 420px) {
+   h1 {
+    font-size: 28px;
+   }
+
+   h2 {
+    font-size: 24px;
+   }
+
+   .date {
+    font-size: 16px;
+   }
+
+   .time {
+    font-size: 28px;
+   }
+
+   footer {
+    font-size: 10px;
+   }
 }
