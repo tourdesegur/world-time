@@ -1,0 +1,11 @@
+.container-main {
+    max-width: 600px;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 40px auto 20px auto;
+}
+
+.clock-image {
+    max-width: 100%;
+}
