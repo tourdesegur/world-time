@@ -1,3 +1,4 @@
+// Updates inities HTML with the live data from AJAX library: https://momentjs.com/docs/#/manipulating/timezone-offset/
 function updateTime() {
     let lisbonElement = document.querySelector("#lisbon");
     if (lisbonElement) {
@@ -30,9 +31,7 @@ function updateTime() {
     }
 }
 
-updateTime();
-setInterval(updateTime, 1000);
-
+// Replace initial HTML with the formatted data for the chosen city. "Current" option shows the user's Time Zone with it's major city
 function updateCity(event) {
     console.log(event);
     console.log(event.target.value);
@@ -55,10 +54,12 @@ function updateCity(event) {
     <button type="button" class="btn btn-light"><a href="/" class="link-home">All cities</a></button>
     `;
   }
-
   
-  
+  // Calls updateCity function upon select element change
   let citiesSelectElement = document.querySelector("#city");
   citiesSelectElement.addEventListener("change", updateCity);
 
+  // Calls updateTime function upon the page load
+  updateTime();
+  setInterval(updateTime, 1000);
 
