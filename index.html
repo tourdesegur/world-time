@@ -7,20 +7,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>World Time App</title>
 </head>
 <body>
-    <div class="container container-main mt-5 mb-3 text-center shadow bg-white rounded">
+    <div class="container container-main text-center mt-5 mb-3 shadow bg-white rounded">
         <img src="media/clock.jpg" class="clock-image" alt="clock-img"/>
-        <h1 class="p-5 mb-0 homepage"><a href="/">World Time</a></h1>
+        <h1 class="p-5 mb-0 homepage text-center"><a href="/">World Time</a></h1>
+      
         <select class="form-select mb-5" id="city">
             <option value="">Select a city</option>
-            <option value="current">Current Location</option>
+            <option value="current">Current Timezone</option>
             <option value="Europe/Lisbon">Lisbon</option>
             <option value="America/New_York">New York</option>
             <option value="Asia/Tokyo">Tokyo</option>
           </select>
+  
         <div class="container" id="cities">
             <div class="city city-break d-flex justify-content-between" id="lisbon">
                 <div>
